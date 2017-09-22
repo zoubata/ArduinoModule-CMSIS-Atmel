@@ -306,7 +306,7 @@
 
 /* SAMD21 series */
 #define SAMC21J17 ( \
-    part_is_defined( SAMD21J17A ) )
+    part_is_defined( SAMC21J17A ) )
 
 #define SAMC21G17A ( \
     part_is_defined( SAMC21G17AU ) )
@@ -692,6 +692,7 @@
 
 #if SAMC_SERIES
 #include "samc.h"
+
 #endif /* SAMR_SERIES */
 
 #if SAM4_SERIES
@@ -699,3 +700,11 @@
 #endif /* SAM4_SERIES */
 
 #endif
+#define SAMC20 SAMC20_SERIES
+#define SAMC21 SAMC21_SERIES
+#define SAMD20 SAMD20_SERIES
+#define SAMD21 SAMD21_SERIES
+#define SAML SAML_SERIES
+#define SAMC SAMC_SERIES
+#define SAMD SAMD_SERIES
+#define SAML21 SAML21_SERIES
