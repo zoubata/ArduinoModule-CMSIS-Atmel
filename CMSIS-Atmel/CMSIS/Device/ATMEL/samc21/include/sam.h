@@ -24,7 +24,7 @@
  * \license_stop
  *
  */
-
+#error 2 test
 #ifndef _SAM_
 #define _SAM_
 
