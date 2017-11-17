@@ -3,7 +3,7 @@
  *
  * \brief Instance description for SERCOM5
  *
- * Copyright (c) 2015 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2016 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -53,7 +53,7 @@
 #define REG_SERCOM5_I2CM_INTENSET  (0x42001C16U) /**< \brief (SERCOM5) I2CM Interrupt Enable Set */
 #define REG_SERCOM5_I2CM_INTFLAG   (0x42001C18U) /**< \brief (SERCOM5) I2CM Interrupt Flag Status and Clear */
 #define REG_SERCOM5_I2CM_STATUS    (0x42001C1AU) /**< \brief (SERCOM5) I2CM Status */
-#define REG_SERCOM5_I2CM_SYNCBUSY  (0x42001C1CU) /**< \brief (SERCOM5) I2CM Syncbusy */
+#define REG_SERCOM5_I2CM_SYNCBUSY  (0x42001C1CU) /**< \brief (SERCOM5) I2CM Synchronization Busy */
 #define REG_SERCOM5_I2CM_ADDR      (0x42001C24U) /**< \brief (SERCOM5) I2CM Address */
 #define REG_SERCOM5_I2CM_DATA      (0x42001C28U) /**< \brief (SERCOM5) I2CM Data */
 #define REG_SERCOM5_I2CM_DBGCTRL   (0x42001C30U) /**< \brief (SERCOM5) I2CM Debug Control */
@@ -63,7 +63,7 @@
 #define REG_SERCOM5_I2CS_INTENSET  (0x42001C16U) /**< \brief (SERCOM5) I2CS Interrupt Enable Set */
 #define REG_SERCOM5_I2CS_INTFLAG   (0x42001C18U) /**< \brief (SERCOM5) I2CS Interrupt Flag Status and Clear */
 #define REG_SERCOM5_I2CS_STATUS    (0x42001C1AU) /**< \brief (SERCOM5) I2CS Status */
-#define REG_SERCOM5_I2CS_SYNCBUSY  (0x42001C1CU) /**< \brief (SERCOM5) I2CS Syncbusy */
+#define REG_SERCOM5_I2CS_SYNCBUSY  (0x42001C1CU) /**< \brief (SERCOM5) I2CS Synchronization Busy */
 #define REG_SERCOM5_I2CS_ADDR      (0x42001C24U) /**< \brief (SERCOM5) I2CS Address */
 #define REG_SERCOM5_I2CS_DATA      (0x42001C28U) /**< \brief (SERCOM5) I2CS Data */
 #define REG_SERCOM5_SPI_CTRLA      (0x42001C00U) /**< \brief (SERCOM5) SPI Control A */
@@ -73,7 +73,7 @@
 #define REG_SERCOM5_SPI_INTENSET   (0x42001C16U) /**< \brief (SERCOM5) SPI Interrupt Enable Set */
 #define REG_SERCOM5_SPI_INTFLAG    (0x42001C18U) /**< \brief (SERCOM5) SPI Interrupt Flag Status and Clear */
 #define REG_SERCOM5_SPI_STATUS     (0x42001C1AU) /**< \brief (SERCOM5) SPI Status */
-#define REG_SERCOM5_SPI_SYNCBUSY   (0x42001C1CU) /**< \brief (SERCOM5) SPI Syncbusy */
+#define REG_SERCOM5_SPI_SYNCBUSY   (0x42001C1CU) /**< \brief (SERCOM5) SPI Synchronization Busy */
 #define REG_SERCOM5_SPI_ADDR       (0x42001C24U) /**< \brief (SERCOM5) SPI Address */
 #define REG_SERCOM5_SPI_DATA       (0x42001C28U) /**< \brief (SERCOM5) SPI Data */
 #define REG_SERCOM5_SPI_DBGCTRL    (0x42001C30U) /**< \brief (SERCOM5) SPI Debug Control */
@@ -85,7 +85,7 @@
 #define REG_SERCOM5_USART_INTENSET (0x42001C16U) /**< \brief (SERCOM5) USART Interrupt Enable Set */
 #define REG_SERCOM5_USART_INTFLAG  (0x42001C18U) /**< \brief (SERCOM5) USART Interrupt Flag Status and Clear */
 #define REG_SERCOM5_USART_STATUS   (0x42001C1AU) /**< \brief (SERCOM5) USART Status */
-#define REG_SERCOM5_USART_SYNCBUSY (0x42001C1CU) /**< \brief (SERCOM5) USART Syncbusy */
+#define REG_SERCOM5_USART_SYNCBUSY (0x42001C1CU) /**< \brief (SERCOM5) USART Synchronization Busy */
 #define REG_SERCOM5_USART_DATA     (0x42001C28U) /**< \brief (SERCOM5) USART Data */
 #define REG_SERCOM5_USART_DBGCTRL  (0x42001C30U) /**< \brief (SERCOM5) USART Debug Control */
 #else
@@ -96,7 +96,7 @@
 #define REG_SERCOM5_I2CM_INTENSET  (*(RwReg8 *)0x42001C16U) /**< \brief (SERCOM5) I2CM Interrupt Enable Set */
 #define REG_SERCOM5_I2CM_INTFLAG   (*(RwReg8 *)0x42001C18U) /**< \brief (SERCOM5) I2CM Interrupt Flag Status and Clear */
 #define REG_SERCOM5_I2CM_STATUS    (*(RwReg16*)0x42001C1AU) /**< \brief (SERCOM5) I2CM Status */
-#define REG_SERCOM5_I2CM_SYNCBUSY  (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) I2CM Syncbusy */
+#define REG_SERCOM5_I2CM_SYNCBUSY  (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) I2CM Synchronization Busy */
 #define REG_SERCOM5_I2CM_ADDR      (*(RwReg  *)0x42001C24U) /**< \brief (SERCOM5) I2CM Address */
 #define REG_SERCOM5_I2CM_DATA      (*(RwReg8 *)0x42001C28U) /**< \brief (SERCOM5) I2CM Data */
 #define REG_SERCOM5_I2CM_DBGCTRL   (*(RwReg8 *)0x42001C30U) /**< \brief (SERCOM5) I2CM Debug Control */
@@ -106,7 +106,7 @@
 #define REG_SERCOM5_I2CS_INTENSET  (*(RwReg8 *)0x42001C16U) /**< \brief (SERCOM5) I2CS Interrupt Enable Set */
 #define REG_SERCOM5_I2CS_INTFLAG   (*(RwReg8 *)0x42001C18U) /**< \brief (SERCOM5) I2CS Interrupt Flag Status and Clear */
 #define REG_SERCOM5_I2CS_STATUS    (*(RwReg16*)0x42001C1AU) /**< \brief (SERCOM5) I2CS Status */
-#define REG_SERCOM5_I2CS_SYNCBUSY  (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) I2CS Syncbusy */
+#define REG_SERCOM5_I2CS_SYNCBUSY  (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) I2CS Synchronization Busy */
 #define REG_SERCOM5_I2CS_ADDR      (*(RwReg  *)0x42001C24U) /**< \brief (SERCOM5) I2CS Address */
 #define REG_SERCOM5_I2CS_DATA      (*(RwReg8 *)0x42001C28U) /**< \brief (SERCOM5) I2CS Data */
 #define REG_SERCOM5_SPI_CTRLA      (*(RwReg  *)0x42001C00U) /**< \brief (SERCOM5) SPI Control A */
@@ -116,7 +116,7 @@
 #define REG_SERCOM5_SPI_INTENSET   (*(RwReg8 *)0x42001C16U) /**< \brief (SERCOM5) SPI Interrupt Enable Set */
 #define REG_SERCOM5_SPI_INTFLAG    (*(RwReg8 *)0x42001C18U) /**< \brief (SERCOM5) SPI Interrupt Flag Status and Clear */
 #define REG_SERCOM5_SPI_STATUS     (*(RwReg16*)0x42001C1AU) /**< \brief (SERCOM5) SPI Status */
-#define REG_SERCOM5_SPI_SYNCBUSY   (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) SPI Syncbusy */
+#define REG_SERCOM5_SPI_SYNCBUSY   (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) SPI Synchronization Busy */
 #define REG_SERCOM5_SPI_ADDR       (*(RwReg  *)0x42001C24U) /**< \brief (SERCOM5) SPI Address */
 #define REG_SERCOM5_SPI_DATA       (*(RwReg  *)0x42001C28U) /**< \brief (SERCOM5) SPI Data */
 #define REG_SERCOM5_SPI_DBGCTRL    (*(RwReg8 *)0x42001C30U) /**< \brief (SERCOM5) SPI Debug Control */
@@ -128,7 +128,7 @@
 #define REG_SERCOM5_USART_INTENSET (*(RwReg8 *)0x42001C16U) /**< \brief (SERCOM5) USART Interrupt Enable Set */
 #define REG_SERCOM5_USART_INTFLAG  (*(RwReg8 *)0x42001C18U) /**< \brief (SERCOM5) USART Interrupt Flag Status and Clear */
 #define REG_SERCOM5_USART_STATUS   (*(RwReg16*)0x42001C1AU) /**< \brief (SERCOM5) USART Status */
-#define REG_SERCOM5_USART_SYNCBUSY (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) USART Syncbusy */
+#define REG_SERCOM5_USART_SYNCBUSY (*(RoReg  *)0x42001C1CU) /**< \brief (SERCOM5) USART Synchronization Busy */
 #define REG_SERCOM5_USART_DATA     (*(RwReg16*)0x42001C28U) /**< \brief (SERCOM5) USART Data */
 #define REG_SERCOM5_USART_DBGCTRL  (*(RwReg8 *)0x42001C30U) /**< \brief (SERCOM5) USART Debug Control */
 #endif /* (defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */

@@ -3,7 +3,7 @@
  *
  * \brief Component description for SERCOM
  *
- * Copyright (c) 2015 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2016 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -51,7 +51,7 @@
 /*@{*/
 
 #define SERCOM_U2201
-#define REV_SERCOM                  0x200
+#define REV_SERCOM                  0x220
 
 /* -------- SERCOM_I2CM_CTRLA : (SERCOM Offset: 0x00) (R/W 32) I2CM I2CM Control A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -1093,7 +1093,7 @@ typedef union {
 #define SERCOM_USART_STATUS_COLL    (0x1ul << SERCOM_USART_STATUS_COLL_Pos)
 #define SERCOM_USART_STATUS_MASK    0x003Ful     /**< \brief (SERCOM_USART_STATUS) MASK Register */
 
-/* -------- SERCOM_I2CM_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) I2CM I2CM Syncbusy -------- */
+/* -------- SERCOM_I2CM_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) I2CM I2CM Synchronization Busy -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 typedef union {
   struct {
@@ -1106,8 +1106,8 @@ typedef union {
 } SERCOM_I2CM_SYNCBUSY_Type;
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-#define SERCOM_I2CM_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_I2CM_SYNCBUSY offset) I2CM Syncbusy */
-#define SERCOM_I2CM_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_I2CM_SYNCBUSY reset_value) I2CM Syncbusy */
+#define SERCOM_I2CM_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_I2CM_SYNCBUSY offset) I2CM Synchronization Busy */
+#define SERCOM_I2CM_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_I2CM_SYNCBUSY reset_value) I2CM Synchronization Busy */
 
 #define SERCOM_I2CM_SYNCBUSY_SWRST_Pos 0            /**< \brief (SERCOM_I2CM_SYNCBUSY) Software Reset Synchronization Busy */
 #define SERCOM_I2CM_SYNCBUSY_SWRST  (0x1ul << SERCOM_I2CM_SYNCBUSY_SWRST_Pos)
@@ -1117,7 +1117,7 @@ typedef union {
 #define SERCOM_I2CM_SYNCBUSY_SYSOP  (0x1ul << SERCOM_I2CM_SYNCBUSY_SYSOP_Pos)
 #define SERCOM_I2CM_SYNCBUSY_MASK   0x00000007ul /**< \brief (SERCOM_I2CM_SYNCBUSY) MASK Register */
 
-/* -------- SERCOM_I2CS_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) I2CS I2CS Syncbusy -------- */
+/* -------- SERCOM_I2CS_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) I2CS I2CS Synchronization Busy -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 typedef union {
   struct {
@@ -1129,8 +1129,8 @@ typedef union {
 } SERCOM_I2CS_SYNCBUSY_Type;
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-#define SERCOM_I2CS_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_I2CS_SYNCBUSY offset) I2CS Syncbusy */
-#define SERCOM_I2CS_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_I2CS_SYNCBUSY reset_value) I2CS Syncbusy */
+#define SERCOM_I2CS_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_I2CS_SYNCBUSY offset) I2CS Synchronization Busy */
+#define SERCOM_I2CS_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_I2CS_SYNCBUSY reset_value) I2CS Synchronization Busy */
 
 #define SERCOM_I2CS_SYNCBUSY_SWRST_Pos 0            /**< \brief (SERCOM_I2CS_SYNCBUSY) Software Reset Synchronization Busy */
 #define SERCOM_I2CS_SYNCBUSY_SWRST  (0x1ul << SERCOM_I2CS_SYNCBUSY_SWRST_Pos)
@@ -1138,7 +1138,7 @@ typedef union {
 #define SERCOM_I2CS_SYNCBUSY_ENABLE (0x1ul << SERCOM_I2CS_SYNCBUSY_ENABLE_Pos)
 #define SERCOM_I2CS_SYNCBUSY_MASK   0x00000003ul /**< \brief (SERCOM_I2CS_SYNCBUSY) MASK Register */
 
-/* -------- SERCOM_SPI_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) SPI SPI Syncbusy -------- */
+/* -------- SERCOM_SPI_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) SPI SPI Synchronization Busy -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 typedef union {
   struct {
@@ -1151,8 +1151,8 @@ typedef union {
 } SERCOM_SPI_SYNCBUSY_Type;
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-#define SERCOM_SPI_SYNCBUSY_OFFSET  0x1C         /**< \brief (SERCOM_SPI_SYNCBUSY offset) SPI Syncbusy */
-#define SERCOM_SPI_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_SPI_SYNCBUSY reset_value) SPI Syncbusy */
+#define SERCOM_SPI_SYNCBUSY_OFFSET  0x1C         /**< \brief (SERCOM_SPI_SYNCBUSY offset) SPI Synchronization Busy */
+#define SERCOM_SPI_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_SPI_SYNCBUSY reset_value) SPI Synchronization Busy */
 
 #define SERCOM_SPI_SYNCBUSY_SWRST_Pos 0            /**< \brief (SERCOM_SPI_SYNCBUSY) Software Reset Synchronization Busy */
 #define SERCOM_SPI_SYNCBUSY_SWRST   (0x1ul << SERCOM_SPI_SYNCBUSY_SWRST_Pos)
@@ -1162,7 +1162,7 @@ typedef union {
 #define SERCOM_SPI_SYNCBUSY_CTRLB   (0x1ul << SERCOM_SPI_SYNCBUSY_CTRLB_Pos)
 #define SERCOM_SPI_SYNCBUSY_MASK    0x00000007ul /**< \brief (SERCOM_SPI_SYNCBUSY) MASK Register */
 
-/* -------- SERCOM_USART_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) USART USART Syncbusy -------- */
+/* -------- SERCOM_USART_SYNCBUSY : (SERCOM Offset: 0x1C) (R/  32) USART USART Synchronization Busy -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 typedef union {
   struct {
@@ -1175,8 +1175,8 @@ typedef union {
 } SERCOM_USART_SYNCBUSY_Type;
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-#define SERCOM_USART_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_USART_SYNCBUSY offset) USART Syncbusy */
-#define SERCOM_USART_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_USART_SYNCBUSY reset_value) USART Syncbusy */
+#define SERCOM_USART_SYNCBUSY_OFFSET 0x1C         /**< \brief (SERCOM_USART_SYNCBUSY offset) USART Synchronization Busy */
+#define SERCOM_USART_SYNCBUSY_RESETVALUE 0x00000000ul /**< \brief (SERCOM_USART_SYNCBUSY reset_value) USART Synchronization Busy */
 
 #define SERCOM_USART_SYNCBUSY_SWRST_Pos 0            /**< \brief (SERCOM_USART_SYNCBUSY) Software Reset Synchronization Busy */
 #define SERCOM_USART_SYNCBUSY_SWRST (0x1ul << SERCOM_USART_SYNCBUSY_SWRST_Pos)
@@ -1417,7 +1417,7 @@ typedef struct { /* I2C Master Mode */
   __IO SERCOM_I2CM_INTFLAG_Type  INTFLAG;     /**< \brief Offset: 0x18 (R/W  8) I2CM Interrupt Flag Status and Clear */
        RoReg8                    Reserved5[0x1];
   __IO SERCOM_I2CM_STATUS_Type   STATUS;      /**< \brief Offset: 0x1A (R/W 16) I2CM Status */
-  __I  SERCOM_I2CM_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) I2CM Syncbusy */
+  __I  SERCOM_I2CM_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) I2CM Synchronization Busy */
        RoReg8                    Reserved6[0x4];
   __IO SERCOM_I2CM_ADDR_Type     ADDR;        /**< \brief Offset: 0x24 (R/W 32) I2CM Address */
   __IO SERCOM_I2CM_DATA_Type     DATA;        /**< \brief Offset: 0x28 (R/W  8) I2CM Data */
@@ -1439,7 +1439,7 @@ typedef struct { /* I2C Slave Mode */
   __IO SERCOM_I2CS_INTFLAG_Type  INTFLAG;     /**< \brief Offset: 0x18 (R/W  8) I2CS Interrupt Flag Status and Clear */
        RoReg8                    Reserved4[0x1];
   __IO SERCOM_I2CS_STATUS_Type   STATUS;      /**< \brief Offset: 0x1A (R/W 16) I2CS Status */
-  __I  SERCOM_I2CS_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) I2CS Syncbusy */
+  __I  SERCOM_I2CS_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) I2CS Synchronization Busy */
        RoReg8                    Reserved5[0x4];
   __IO SERCOM_I2CS_ADDR_Type     ADDR;        /**< \brief Offset: 0x24 (R/W 32) I2CS Address */
   __IO SERCOM_I2CS_DATA_Type     DATA;        /**< \brief Offset: 0x28 (R/W  8) I2CS Data */
@@ -1461,7 +1461,7 @@ typedef struct { /* SPI Mode */
   __IO SERCOM_SPI_INTFLAG_Type   INTFLAG;     /**< \brief Offset: 0x18 (R/W  8) SPI Interrupt Flag Status and Clear */
        RoReg8                    Reserved5[0x1];
   __IO SERCOM_SPI_STATUS_Type    STATUS;      /**< \brief Offset: 0x1A (R/W 16) SPI Status */
-  __I  SERCOM_SPI_SYNCBUSY_Type  SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) SPI Syncbusy */
+  __I  SERCOM_SPI_SYNCBUSY_Type  SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) SPI Synchronization Busy */
        RoReg8                    Reserved6[0x4];
   __IO SERCOM_SPI_ADDR_Type      ADDR;        /**< \brief Offset: 0x24 (R/W 32) SPI Address */
   __IO SERCOM_SPI_DATA_Type      DATA;        /**< \brief Offset: 0x28 (R/W 32) SPI Data */
@@ -1486,7 +1486,7 @@ typedef struct { /* USART Mode */
   __IO SERCOM_USART_INTFLAG_Type INTFLAG;     /**< \brief Offset: 0x18 (R/W  8) USART Interrupt Flag Status and Clear */
        RoReg8                    Reserved5[0x1];
   __IO SERCOM_USART_STATUS_Type  STATUS;      /**< \brief Offset: 0x1A (R/W 16) USART Status */
-  __I  SERCOM_USART_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) USART Syncbusy */
+  __I  SERCOM_USART_SYNCBUSY_Type SYNCBUSY;    /**< \brief Offset: 0x1C (R/  32) USART Synchronization Busy */
        RoReg8                    Reserved6[0x8];
   __IO SERCOM_USART_DATA_Type    DATA;        /**< \brief Offset: 0x28 (R/W 16) USART Data */
        RoReg8                    Reserved7[0x6];

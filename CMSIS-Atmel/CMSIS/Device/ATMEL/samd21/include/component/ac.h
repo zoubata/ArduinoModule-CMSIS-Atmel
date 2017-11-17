@@ -3,7 +3,7 @@
  *
  * \brief Component description for AC
  *
- * Copyright (c) 2015 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2016 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -51,7 +51,7 @@
 /*@{*/
 
 #define AC_U2205
-#define REV_AC                      0x111
+#define REV_AC                      0x112
 
 /* -------- AC_CTRLA : (AC Offset: 0x00) (R/W  8) Control A -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))

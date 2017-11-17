@@ -3,7 +3,7 @@
  *
  * \brief Instance description for PM
  *
- * Copyright (c) 2015 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2016 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -48,6 +48,7 @@
 #if (defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
 #define REG_PM_CTRL                (0x40000400U) /**< \brief (PM) Control */
 #define REG_PM_SLEEP               (0x40000401U) /**< \brief (PM) Sleep Mode */
+#define REG_PM_EXTCTRL             (0x40000402U) /**< \brief (PM) External Reset Controller */
 #define REG_PM_CPUSEL              (0x40000408U) /**< \brief (PM) CPU Clock Select */
 #define REG_PM_APBASEL             (0x40000409U) /**< \brief (PM) APBA Clock Select */
 #define REG_PM_APBBSEL             (0x4000040AU) /**< \brief (PM) APBB Clock Select */
@@ -63,6 +64,7 @@
 #else
 #define REG_PM_CTRL                (*(RwReg8 *)0x40000400U) /**< \brief (PM) Control */
 #define REG_PM_SLEEP               (*(RwReg8 *)0x40000401U) /**< \brief (PM) Sleep Mode */
+#define REG_PM_EXTCTRL             (*(RwReg8 *)0x40000402U) /**< \brief (PM) External Reset Controller */
 #define REG_PM_CPUSEL              (*(RwReg8 *)0x40000408U) /**< \brief (PM) CPU Clock Select */
 #define REG_PM_APBASEL             (*(RwReg8 *)0x40000409U) /**< \brief (PM) APBA Clock Select */
 #define REG_PM_APBBSEL             (*(RwReg8 *)0x4000040AU) /**< \brief (PM) APBB Clock Select */

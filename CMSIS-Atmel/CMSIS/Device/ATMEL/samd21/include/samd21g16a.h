@@ -3,7 +3,7 @@
  *
  * \brief Header file for SAMD21G16A
  *
- * Copyright (c) 2015 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2016 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -138,16 +138,16 @@ typedef struct _DeviceVectors
   void* pfnReset_Handler;
   void* pfnNMI_Handler;
   void* pfnHardFault_Handler;
-  void* pfnReservedM12;
-  void* pfnReservedM11;
-  void* pfnReservedM10;
-  void* pfnReservedM9;
-  void* pfnReservedM8;
-  void* pfnReservedM7;
-  void* pfnReservedM6;
+  void* pvReservedM12;
+  void* pvReservedM11;
+  void* pvReservedM10;
+  void* pvReservedM9;
+  void* pvReservedM8;
+  void* pvReservedM7;
+  void* pvReservedM6;
   void* pfnSVC_Handler;
-  void* pfnReservedM4;
-  void* pfnReservedM3;
+  void* pvReservedM4;
+  void* pvReservedM3;
   void* pfnPendSV_Handler;
   void* pfnSysTick_Handler;
 
@@ -173,14 +173,14 @@ typedef struct _DeviceVectors
   void* pfnTC3_Handler;                   /* 18 Basic Timer Counter 3 */
   void* pfnTC4_Handler;                   /* 19 Basic Timer Counter 4 */
   void* pfnTC5_Handler;                   /* 20 Basic Timer Counter 5 */
-  void* pfnReserved21;
-  void* pfnReserved22;
+  void* pvReserved21;
+  void* pvReserved22;
   void* pfnADC_Handler;                   /* 23 Analog Digital Converter */
   void* pfnAC_Handler;                    /* 24 Analog Comparators */
   void* pfnDAC_Handler;                   /* 25 Digital Analog Converter */
   void* pfnPTC_Handler;                   /* 26 Peripheral Touch Controller */
   void* pfnI2S_Handler;                   /* 27 Inter-IC Sound Interface */
-  void* pfnReserved28;
+  void* pvReserved28;
 } DeviceVectors;
 
 /* Cortex-M0+ processor handlers */
