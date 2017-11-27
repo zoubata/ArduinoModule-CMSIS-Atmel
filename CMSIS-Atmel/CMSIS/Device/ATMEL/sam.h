@@ -73,6 +73,7 @@
 
 /* SAMD20 series */
 #define SAMD20J17 ( \
+    part_is_defined( SAMD20J17 ) || \
     part_is_defined( SAMD20J17A ) )
 
 #define SAMD20G17A ( \
@@ -82,54 +83,71 @@
     part_is_defined( SAMD20E15BU ) )
 
 #define SAMD20E15 ( \
+    part_is_defined( SAMD20E15 ) || \
     part_is_defined( SAMD20E15A ) || \
     part_is_defined( SAMD20E15B ) || \
     part_is_defined( SAMD20E15L ) )
 
 #define SAMD20E16 ( \
+    part_is_defined( SAMD20E16 ) || \
     part_is_defined( SAMD20E16A ) || \
     part_is_defined( SAMD20E16B ) || \
     part_is_defined( SAMD20E16L ) )
 
 #define SAMD20E17 ( \
+    part_is_defined( SAMD20E17 ) || \
     part_is_defined( SAMD20E17A ) )
 
 #define SAMD20E18 ( \
+    part_is_defined( SAMD20E18 ) || \
     part_is_defined( SAMD20E18A ) )
 
 #define SAMD20E16B ( \
     part_is_defined( SAMD20E16BU ) )
 
 #define SAMD20J15 ( \
+    part_is_defined( SAMD20J15 ) || \
     part_is_defined( SAMD20J15A ) || \
     part_is_defined( SAMD20J15B ) )
 
 #define SAMD20J16 ( \
+    part_is_defined( SAMD20J16 ) || \
     part_is_defined( SAMD20J16A ) || \
     part_is_defined( SAMD20J16B ) )
 
 #define SAMD20G16 ( \
+    part_is_defined( SAMD20G16 ) || \
     part_is_defined( SAMD20G16A ) || \
     part_is_defined( SAMD20G16B ) )
 
 #define SAMD20G17 ( \
+    part_is_defined( SAMD20G17 ) || \
     part_is_defined( SAMD20G17A ) )
 
 #define SAMD20G18A ( \
+    part_is_defined( SAMD20G18 ) || \
     part_is_defined( SAMD20G18AU ) )
 
 #define SAMD20G15 ( \
+    part_is_defined( SAMD20G15 ) || \
     part_is_defined( SAMD20G15A ) || \
     part_is_defined( SAMD20G15B ) )
 
 #define SAMD20G18 ( \
+    part_is_defined( SAMD20G18 ) || \
     part_is_defined( SAMD20G18A ) )
 
 #define SAMD20J18 ( \
+    part_is_defined( SAMD20J18 ) || \
     part_is_defined( SAMD20J18A ) )
 
 /* Entire SAMD20 series */
-#define SAMD20_SERIES (SAMD20J17 || SAMD20G17A || SAMD20E15B || SAMD20E15 || SAMD20E16 || SAMD20E17 || SAMD20E18 || SAMD20E16B || SAMD20J15 || SAMD20J16 || SAMD20G16 || SAMD20G17 || SAMD20G18A || SAMD20G15 || SAMD20G18 || SAMD20J18)
+
+#define SAMD20J (SAMD20J17 || SAMD20J15 || SAMD20J16 || SAMD20J18)
+#define SAMD20G (SAMD20G17 || SAMD20G15 || SAMD20G16 || SAMD20G18)
+#define SAMD20E (SAMD20E17 || SAMD20E15 || SAMD20E16 || SAMD20E18)
+#define SAMD20_SERIES (SAMD20E || SAMD20G || SAMD20J)
+#define SAMD20	SAMD20_SERIES
 
 
 /*
@@ -235,10 +253,7 @@
 #define SAMD21G (SAMD21G17 || SAMD21G15 || SAMD21G16 || SAMD21G18)
 #define SAMD21E (SAMD21E17 || SAMD21E15 || SAMD21E16 || SAMD21E18)
 #define SAMD21	SAMD21_SERIES
-#define SAMD20J (SAMD20J17 || SAMD20J15 || SAMD20J16 || SAMD20J18)
-#define SAMD20G (SAMD20G17 || SAMD20G15 || SAMD20G16 || SAMD20G18)
-#define SAMD20E (SAMD20E17 || SAMD20E15 || SAMD20E16 || SAMD20E18)
-#define SAMD20	SAMD20_SERIES
+
 /*
  * ----------------------------------------------------------------------------
  * SAMC family
