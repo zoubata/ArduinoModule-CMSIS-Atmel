@@ -24,12 +24,12 @@ SHELL = /bin/sh
 
 ROOT_PATH := .
 
-PACKAGE_NAME := CMSIS-Atmel
-PACKAGE_VERSION := 1.1.0
+PACKAGE_NAME := bossac
+PACKAGE_VERSION := 1.7.0-zoubworld-1
 
 # -----------------------------------------------------------------------------
 # packaging specific
-PACKAGE_FOLDER := CMSIS-Atmel
+PACKAGE_FOLDER := 1.7.0-zoubworld-1
 
 ifeq (postpackaging,$(findstring $(MAKECMDGOALS),postpackaging))
   PACKAGE_FILENAME=$(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.bz2
